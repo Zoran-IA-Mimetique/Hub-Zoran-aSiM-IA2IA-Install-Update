@@ -1,0 +1,6 @@
+{
+  "stability_avg": "float ∈ [0,1] — moyenne de stabilité (ΔM11.3)",
+  "latency_p95": "ms — latence au 95e percentile",
+  "rollbacks": "int — nombre de rollbacks ΔM11.3 / 100 runs",
+  "propagation_index": "float — (heuristique) visibilité/propagation IA↔IA"
+}

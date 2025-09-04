@@ -1,0 +1,21 @@
+zdm:
+  persistent_base: enabled
+  resonant_cache: enabled
+  ttl_hint_days: 0  # reconstruction à chaque session
+guard_deltaM11_3:
+  enabled: true
+  stability_min: 0.85
+  action_on_drop: rollback
+logging:
+  minimal_metrics: [stability_avg, latency_p95, rollbacks]
+  pii_minimization: true
+compliance:
+  ai_act_map: "high-level"
+  rgpd_minimization: true
+  allowed_use: ["éducation", "productivité", "documentation", "prototypage stdlib"]
+  disallowed_use: ["harm", "evasion", "adult", "self-harm", "illegal"]
+updates:
+  primary: "GitHub"
+  fallback: "Zenodo"
+docs:
+  longform: ["Medium", "Substack"]
